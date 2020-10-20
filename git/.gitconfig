@@ -1,0 +1,75 @@
+[core]
+	# Npp as default editor on windows
+	editor = 'C:\\Program Files (x86)\\Notepad++\\notepad++.exe' -multiInst -notabbar -nosession -noPlugin
+
+	# Don't mess up with line ends, leave what it is.
+	# https://stackoverflow.com/questions/2825428/why-should-i-use-core-autocrlf-true-in-git
+	autocrlf = false
+	safecrlf = true
+
+	# Fix unicode file name display problem
+	quotepath = false
+
+	# Ignore file mode change on Windows
+	filemode = false
+
+[alias]
+	# checkout
+	co = checkout
+	cd = checkout develop
+	cm = checkout master
+
+	# commit
+	ca = commit --amend
+
+	# Please note that this command is only intended for create initial commit,
+	# aka, the "root-commit" in a git project.
+	# "ic" is short for "Initial Commit".
+	ic = commit -m 'Initial commit' --allow-empty --date='1970-01-01 00:00:00'
+
+	# diff
+	d = diff --word-diff=color
+	ds = diff --stat
+	dsd = diff --word-diff=color --staged
+
+	# merge
+	m = merge --ff-only
+
+	# rebase
+	rb = rebase -i
+	rc = rebase --continue
+
+	# status
+	s = status -s
+
+	# misc
+	remotes = remote -v
+	tags = tag -l
+	branches = branch -v
+
+	# typo correction
+	psuh = push
+	comit = commit
+
+[pull]
+	# Avoid varies merge conflicts.
+	rebase = true
+
+[rebase]
+	# Save your work just in case and, avoid varies merge conflicts, again.
+	autostash = true
+
+[gui]
+	encoding = utf-8
+
+[i18n]
+	commitencoding = UTF-8
+	logoutputencoding = utf-8
+
+# In case you need to sign your commit on windows
+[commit]
+	gpgsign = true
+
+[gpg]
+	program = C:/Program Files (x86)/GnuPG/bin/gpg.exe
+ 
