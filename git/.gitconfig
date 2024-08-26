@@ -72,4 +72,9 @@
 
 [gpg]
 	program = C:/Program Files (x86)/GnuPG/bin/gpg.exe
- 
+
+# Per-path .gitconfig file configuration settings: in case you need to use a separate email for Github commits.
+# [include]
+# 	path = .default.gitconfig
+# [includeIf "gitdir/i:c:/Users/Zhwt/GithubProjects/"]
+# 	path = .github.gitconfig
