@@ -12,3 +12,14 @@ start /wait "" reg add HKLM\SYSTEM\CurrentControlSet\Services\hns\State /v Enabl
 
 Source: https://dandini.wordpress.com/2019/07/15/administered-port-exclusions-blocking-high-ports/
 
+## Enable Remote Desktop with Microsoft Account Sign-In while having PIN code login
+
+Open `cmd.exe` and type:
+
+```bat
+runas /u:MicrosoftAccount\username@example.com winver
+```
+
+Replace the `username@example.com` part with your email, after the prompt type in your password, then press Enter and all done!
+
+Source: https://cmdrkeene.com/remote-desktop-with-microsoft-account-sign-in/
