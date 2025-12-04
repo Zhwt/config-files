@@ -21,6 +21,7 @@
 
 	# commit
 	ca = commit --amend
+	c = commit
 
 	# Please note that this command is only intended for create initial commit,
 	# aka, the "root-commit" in a git project.
@@ -36,8 +37,10 @@
 	m = merge --ff-only
 
 	# rebase
-	rb = rebase -i
-	rc = rebase --continue
+	rb = rebase
+	rba = rebase --abort
+	rbc = rebase --continue
+	rbi = rebase -i
 
 	# status
 	s = status -s
