@@ -38,7 +38,7 @@ Thumbs.db
 *.out
 
 # Generated Protobuf files
-proto/*.go
+# proto/*.go
 
 # Dependency directories
 vendor/
