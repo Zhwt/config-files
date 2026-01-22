@@ -1,0 +1,15 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_CLASSES_ROOT\Directory\Background\shell\ucrt64_shell]
+@="Open UCRT64 Here"
+"Icon"="C:\\msys64\\ucrt64.ico"
+
+[HKEY_CLASSES_ROOT\Directory\Background\shell\ucrt64_shell\command]
+@="\"C:\\msys64\\msys2_shell.cmd\" -ucrt64 -here"
+
+[HKEY_CLASSES_ROOT\Directory\shell\ucrt64_shell]
+@="Open UCRT64 Here"
+"Icon"="C:\\msys64\\ucrt64.ico"
+
+[HKEY_CLASSES_ROOT\Directory\shell\ucrt64_shell\command]
+@="\"C:\\msys64\\msys2_shell.cmd\" -ucrt64 -here"
