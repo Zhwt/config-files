@@ -33,8 +33,14 @@
 	ds = diff --stat
 	dsd = diff --word-diff=color --staged
 
+	# fetch
+	f = fetch
+
 	# merge
 	m = merge --ff-only
+
+	# fetch and fast forward only merge
+	ff = !git fetch && git merge --ff-only @{u}
 
 	# rebase
 	rb = rebase
