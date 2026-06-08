@@ -47,6 +47,7 @@
 	rba = rebase --abort
 	rbc = rebase --continue
 	rbi = rebase -i
+	rbo = !git fetch && git rebase @{u}
 
 	# status
 	s = status -s
